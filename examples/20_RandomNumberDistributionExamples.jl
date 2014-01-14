@@ -10,7 +10,7 @@ T = rng_env_setup()
 r = rng_alloc(T)
 for i=1:n
     k=int64(ran_poisson(r, mu))
-    @printf(" %u", k)
+    @printf("  %u", k)
 end
 println()
 rng_free(r)
